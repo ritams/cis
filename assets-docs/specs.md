@@ -1,0 +1,7 @@
+- landing page.
+- about page.
+- host institute
+- what do we offer / domain expertise.
+- people
+- engage with us
+- contact page.
