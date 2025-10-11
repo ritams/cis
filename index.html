@@ -13,7 +13,9 @@
 <body>
   <header class="site-header">
     <div class="navbar">
-      <a class="brand" href="index.html">Centre for Intelligent Solutions</a>
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Centre for Intelligent Solutions" />
+      </a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav">
         <ul class="nav-links" data-nav-links data-open="false">
@@ -32,38 +34,78 @@
     <section class="hero">
       <div class="hero__inner">
         <div>
-          <h1>Harness IISER Pune's scientific intelligence to solve industry-scale challenges.</h1>
-          <p class="lead">We partner with industry leaders who are ready to translate complex challenges into deployable solutions. Drawing on IISER Pune's deep scientific bench strength, the Centre for Intelligent Solutions (CIS) delivers high-impact collaborations that combine modelling, simulation, machine learning, and quantum innovation to unlock measurable outcomes.</p>
-          <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a class="cta-button" href="engage.html">Explore collaboration paths</a>
-            <a class="cta-button" style="background: var(--cis-accent); box-shadow: none;" href="contact.html">Schedule an enquiry</a>
+          <h1>Centre for Intelligent Solutions</h1>
+          <p class="hero__subtitle">Harness IISER Pune's scientific intelligence to solve industry-scale challenges.</p>
+          <p class="hero__meta">50+ research experts · 8 priority domains · 20+ industry pilots</p>
+          <div class="cta-group">
+            <a class="cta-button" href="contact.html">Contact us</a>
+            <a class="cta-button cta-button--muted" href="domain-expertise.html">Explore expertise</a>
           </div>
         </div>
-        <div class="surface" style="background: rgba(255,255,255,0.85);">
-          <h2>Why organisations choose CIS</h2>
-          <ul>
-            <li><strong>Integrated expertise:</strong> More than twenty IISER Pune researchers across data science, physics, chemistry, biology, and earth sciences align their skills to solve real-world problems.</li>
-            <li><strong>Proof-driven innovation:</strong> We leverage high-performance computing, rigorous mathematical frameworks, and advanced simulations to de-risk investments before you scale.</li>
-            <li><strong>Industry-ready talent:</strong> Access postdoctoral fellows, advanced students, and certification programs designed for Industry 4.0 needs.</li>
-          </ul>
+        <div class="hero__visual" aria-hidden="true">
+          <svg class="data-wave" viewBox="0 0 360 360" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.65" />
+                <stop offset="55%" stop-color="#8B5CF6" stop-opacity="0.5" />
+                <stop offset="100%" stop-color="#EC4899" stop-opacity="0.55" />
+              </linearGradient>
+            </defs>
+            <path class="data-wave__path data-wave__path--slow" d="M10 260 C 90 180, 150 340, 240 260 C 300 210, 330 220, 350 240" fill="none" stroke="url(#waveGradient)" />
+            <path class="data-wave__path data-wave__path--medium" d="M0 210 C 80 140, 160 300, 240 210 C 300 150, 330 180, 360 200" fill="none" stroke="url(#waveGradient)" />
+            <path class="data-wave__path data-wave__path--fast" d="M20 160 C 120 80, 200 260, 280 160 C 320 120, 340 120, 360 150" fill="none" stroke="url(#waveGradient)" />
+          </svg>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrapper">
-        <div class="surface">
+        <div class="surface surface--elevated">
           <h2>What we help you accelerate</h2>
-          <div class="columns">
-            <div>
-              <p><strong>Molecular-scale insights:</strong> Guide materials, drug discovery, and energy innovation with predictive simulations.</p>
-            </div>
-            <div>
-              <p><strong>AI and quantum solutions:</strong> Optimise supply chains, risk decisions, and privacy-sensitive data pipelines.</p>
-            </div>
-            <div>
-              <p><strong>Urban, climate, and financial analytics:</strong> Translate complex datasets into actionable intelligence.</p>
-            </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-card__accent"></div>
+              <h3 class="feature-card__title">Molecular engines</h3>
+              <p class="feature-card__body">Predictive simulations that speed materials R&D, drug discovery, and clean energy breakthroughs.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__accent"></div>
+              <h3 class="feature-card__title">Cognitive systems</h3>
+              <p class="feature-card__body">Applied AI, machine learning, and quantum optimisation for supply chains and risk-sensitive decisions.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-card__accent"></div>
+              <h3 class="feature-card__title">Planetary intelligence</h3>
+              <p class="feature-card__body">Urban, climate, and financial analytics that turn complex datasets into actionable foresight.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-why">
+      <div class="wrapper">
+        <div class="surface surface--translucent section-why__panel">
+          <div class="section-why__heading">
+            <h2>Why organisations choose CIS</h2>
+          </div>
+          <div class="value-grid">
+            <article class="value-card">
+              <span class="value-card__icon" aria-hidden="true">⚡</span>
+              <h3>Interdisciplinary squads</h3>
+              <p>Core scientists across data, physics, chemistry, biology, and earth sciences aligning from day one.</p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__icon" aria-hidden="true">🔍</span>
+              <h3>Pilot-first confidence</h3>
+              <p>Evidence-led prototypes that de-risk decisions before large-scale investment.</p>
+            </article>
+            <article class="value-card">
+              <span class="value-card__icon" aria-hidden="true">🤝</span>
+              <h3>Embedded partnerships</h3>
+              <p>Researchers who plug into your timelines, governance, and delivery expectations.</p>
+            </article>
           </div>
         </div>
       </div>
