@@ -13,9 +13,15 @@
 <body>
   <header class="site-header">
     <div class="navbar">
-      <a class="brand" href="index.html">
-        <img src="assets/images/logo.png" alt="Centre for Intelligent Solutions" />
-      </a>
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="Centre for Intelligent Solutions">
+          <img src="assets/images/logo.png" alt="Centre for Intelligent Solutions" />
+        </a>
+        <div class="brand-copy">
+          <span class="brand-name">CENTRE FOR INTELLIGENT SOLUTIONS</span>
+          <span class="brand-tagline">Applied intelligence at IISER Pune</span>
+        </div>
+      </div>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav">
         <ul class="nav-links" data-nav-links data-open="false">
@@ -33,94 +39,25 @@
   <main>
     <section class="hero">
       <div class="hero__inner">
-        <div>
-          <h1>Centre for Intelligent Solutions</h1>
-          <p class="hero__subtitle">Harness IISER Pune's scientific intelligence to solve industry-scale challenges.</p>
-          <p class="hero__meta">50+ research experts · 8 priority domains · 20+ industry pilots</p>
+        <div class="hero__content">
+          <h1>Applied intelligence for your toughest decisions.</h1>
+          <p class="hero__subtitle">Work with CIS to co-design AI, simulation, and quantum solutions alongside IISER Pune scientists.</p>
+          <ul class="hero__stats">
+            <li>8 focus domains</li>
+            <li>50+ researchers</li>
+            <li>20 pilots delivered</li>
+          </ul>
+          <p class="hero__note">We scope rapidly, embed the right experts, and transfer outcomes ready for scale.</p>
           <div class="cta-group">
-            <a class="cta-button" href="contact.html">Contact us</a>
+            <a class="cta-button" href="contact.html">Start a project</a>
             <a class="cta-button cta-button--muted" href="domain-expertise.html">Explore expertise</a>
           </div>
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <svg class="data-wave" viewBox="0 0 360 360" role="presentation" focusable="false" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.65" />
-                <stop offset="55%" stop-color="#8B5CF6" stop-opacity="0.5" />
-                <stop offset="100%" stop-color="#EC4899" stop-opacity="0.55" />
-              </linearGradient>
-            </defs>
-            <path class="data-wave__path data-wave__path--slow" d="M10 260 C 90 180, 150 340, 240 260 C 300 210, 330 220, 350 240" fill="none" stroke="url(#waveGradient)" />
-            <path class="data-wave__path data-wave__path--medium" d="M0 210 C 80 140, 160 300, 240 210 C 300 150, 330 180, 360 200" fill="none" stroke="url(#waveGradient)" />
-            <path class="data-wave__path data-wave__path--fast" d="M20 160 C 120 80, 200 260, 280 160 C 320 120, 340 120, 360 150" fill="none" stroke="url(#waveGradient)" />
-          </svg>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrapper">
-        <div class="surface surface--elevated">
-          <h2>What we help you accelerate</h2>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <div class="feature-card__accent"></div>
-              <h3 class="feature-card__title">Molecular engines</h3>
-              <p class="feature-card__body">Predictive simulations that speed materials R&D, drug discovery, and clean energy breakthroughs.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-card__accent"></div>
-              <h3 class="feature-card__title">Cognitive systems</h3>
-              <p class="feature-card__body">Applied AI, machine learning, and quantum optimisation for supply chains and risk-sensitive decisions.</p>
-            </article>
-            <article class="feature-card">
-              <div class="feature-card__accent"></div>
-              <h3 class="feature-card__title">Planetary intelligence</h3>
-              <p class="feature-card__body">Urban, climate, and financial analytics that turn complex datasets into actionable foresight.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-why">
-      <div class="wrapper">
-        <div class="surface surface--translucent section-why__panel">
-          <div class="section-why__heading">
-            <h2>Why organisations choose CIS</h2>
-          </div>
-          <div class="value-grid">
-            <article class="value-card">
-              <span class="value-card__icon" aria-hidden="true">⚡</span>
-              <h3>Interdisciplinary squads</h3>
-              <p>Core scientists across data, physics, chemistry, biology, and earth sciences aligning from day one.</p>
-            </article>
-            <article class="value-card">
-              <span class="value-card__icon" aria-hidden="true">🔍</span>
-              <h3>Pilot-first confidence</h3>
-              <p>Evidence-led prototypes that de-risk decisions before large-scale investment.</p>
-            </article>
-            <article class="value-card">
-              <span class="value-card__icon" aria-hidden="true">🤝</span>
-              <h3>Embedded partnerships</h3>
-              <p>Researchers who plug into your timelines, governance, and delivery expectations.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrapper highlight">
-        <h2>Take the first step</h2>
-        <p class="lead">Schedule a discovery meeting with our coordinators to scope possibilities, explore joint research, or brief us on a pressing challenge. We will outline tailored collaboration pathways, assemble the right experts, and define a roadmap that delivers value from day one.</p>
-        <a class="cta-button" href="contact.html">Book a meeting</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="site-footer">
     <div class="footer-inner">
       <span>© <span data-current-year></span> Centre for Intelligent Solutions, IISER Pune</span>
       <ul class="social-links">

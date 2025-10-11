@@ -13,7 +13,15 @@
 <body>
   <header class="site-header">
     <div class="navbar">
-      <a class="brand" href="index.html">Centre for Intelligent Solutions</a>
+      <div class="brand-group">
+        <a class="brand" href="index.html" aria-label="Centre for Intelligent Solutions">
+          <img src="assets/images/logo.png" alt="Centre for Intelligent Solutions" />
+        </a>
+        <div class="brand-copy">
+          <span class="brand-name">CENTRE FOR INTELLIGENT SOLUTIONS</span>
+          <span class="brand-tagline">Applied intelligence at IISER Pune</span>
+        </div>
+      </div>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav">
         <ul class="nav-links" data-nav-links data-open="false">
@@ -31,59 +39,49 @@
   <main>
     <section class="hero">
       <div class="hero__inner">
-        <div>
-          <h1>From molecular dynamics to quantum materials, CIS delivers end-to-end analytical firepower.</h1>
-          <p class="lead">CIS accelerates outcomes by aligning IISER Pune's deep research strengths with industry-scale challenges. Explore the breadth of capabilities we deploy in joint projects, consultancy, and training engagements.</p>
+        <div class="hero__content">
+          <h1>Capabilities tailored to your domain.</h1>
+          <p class="hero__subtitle">Each stream pairs core science with deployable engineering so that pilots move quickly from proof to production.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="wrapper card-grid">
-        <article class="surface">
-          <h2>Molecular dynamics</h2>
-          <p>We conduct large-scale simulations across materials and biological systems—proteins, DNA, electrolytes, polymers—to evaluate feasibility before costly lab experiments. Techniques such as umbrella sampling, metadynamics, and thermodynamic integration deliver precise free-energy estimates that guide product development.</p>
-        </article>
-        <article class="surface">
-          <h2>Drug design</h2>
-          <p>Our teams run AI-enabled docking studies and de novo drug design pipelines. RFdiffusion, AlphaFlow, and molecular dynamics simulations inform candidate prioritisation and free-energy calculations, helping you accelerate discovery cycles and improve hit quality.</p>
-        </article>
-        <article class="surface">
-          <h2>Machine learning</h2>
-          <p>From deep learning and graph neural networks to reinforcement learning, we design specialised parallel algorithms tailored to scientific and industrial datasets. A dedicated high-performance computing facility powers scalable experimentation that translates into production-ready solutions.</p>
-        </article>
-        <article class="surface">
-          <h2>Quantum computing</h2>
-          <p>IISER Pune leads national efforts in quantum innovation. We co-develop algorithms for optimisation, cryptography, privacy protection, high-precision sensing, and communication tasks where quantum approaches deliver transformative speedups.</p>
-        </article>
-        <article class="surface">
-          <h2>Urban data analytics</h2>
-          <p>We leverage emerging datasets such as OpenStreetMap for route optimisation, location-aware services, and traffic simulations. Our models support mobility platforms, logistics networks, and city planners seeking data-driven operational improvements.</p>
-        </article>
-        <article class="surface">
-          <h2>Quantitative finance</h2>
-          <p>We solve mathematical and statistical problems underlying fintech, derivatives pricing, portfolio optimisation, and credit risk evaluation. Industry partners tap into stochastic modelling, machine learning, and numerical methods to inform high-stakes financial decisions.</p>
-        </article>
-        <article class="surface">
-          <h2>Weather and climate data analytics</h2>
-          <p>Our scientists model cloud organisation, extreme events, and monsoon variability. Collaborations span weather forecasting, disaster risk assessment, urban heat mitigation, agricultural advisory, and environmental consultancy—insights relevant to insurance, transportation, and energy sectors.</p>
-        </article>
-        <article class="surface">
-          <h2>Computational material science</h2>
-          <p>We deliver predictive ab initio modelling and molecular dynamics simulations (ab initio, classical, QM/MM, path integral) to design novel materials. Tools include density functional theory, time-dependent DFT, kinetic Monte Carlo, and nudged elastic band simulations for properties across length and time scales.</p>
-        </article>
-        <article class="surface">
-          <h2>From data to information</h2>
-          <p>We build high-performance computational pipelines for precision cosmology and other data-rich domains. Expertise covers parallel simulations across thousands of cores, bespoke statistical tools, and machine learning techniques that extract actionable patterns from massive datasets.</p>
-        </article>
-        <article class="surface">
-          <h2>Algorithms from wetware</h2>
-          <p>By modelling neurobiological networks, we derive algorithms inspired by animal cognition for pattern recognition, navigation, and memory. Current initiatives include an electronic nose based on insect olfactory systems for detecting volatile biomarker signatures.</p>
-        </article>
-        <article class="surface">
-          <h2>Quantum materials and emergent phenomena</h2>
-          <p>Advanced theoretical models and numerical simulations reveal the electronic, magnetic, and topological properties of quantum materials. We help partners manipulate strain, doping, and fields to guide experiments and prototype devices in quantum computing and spintronics.</p>
-        </article>
+      <div class="wrapper surface">
+        <div class="columns columns--two expertise-columns">
+          <div>
+            <h2>Molecules &amp; materials</h2>
+            <ul class="simple-list">
+              <li>Molecular dynamics and free-energy modelling for biopharma and energy partners.</li>
+              <li>Computational material design spanning DFT, QM/MM, and kinetic simulations.</li>
+              <li>Quantum materials, spintronics, and device-grade property prediction.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>AI &amp; algorithms</h2>
+            <ul class="simple-list">
+              <li>Bespoke machine learning, graph, and reinforcement models for scientific data.</li>
+              <li>Neuro-inspired algorithms that turn biological insights into sensing systems.</li>
+              <li>Parallel HPC pipelines that translate massive datasets into real-time insight.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Quantum &amp; computation</h2>
+            <ul class="simple-list">
+              <li>Algorithm design for optimisation, cryptography, and secure communication.</li>
+              <li>Quantum-ready simulations to benchmark hardware and inform architecture choices.</li>
+              <li>Applied mathematics toolkits that de-risk complex decision models.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Climate &amp; urban systems</h2>
+            <ul class="simple-list">
+              <li>Weather and climate analytics for risk, agriculture, and infrastructure planning.</li>
+              <li>Urban data, routing, and mobility intelligence for logistics and civic partners.</li>
+              <li>Financial modelling that links climate exposure with capital allocation.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
