@@ -231,7 +231,7 @@ section {
   }
 
   h1 {
-    font-size: clamp(1.9rem, 7.5vw, 2.4rem);
+    font-size: clamp(1.2rem, 7.5vw, 2.4rem);
   }
 
   h2 {
@@ -269,6 +269,12 @@ section {
     font-size: 0.82rem;
   }
 
+  .hero--domains .hero__content,
+  .hero--experts .hero__content {
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .navbar {
     width: min(100% - 2rem, var(--cis-max-width));
     gap: 0.75rem;
@@ -285,19 +291,20 @@ section {
   }
 
   .brand-name {
-    font-size: 0.72rem;
+    font-size: 0.5rem;
   }
 
   .brand-tagline {
-    font-size: 0.68rem;
+    font-size: 0.5rem;
   }
 
   .nav-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.9rem;
-    padding: 0.45rem 0.75rem;
+    display: block;
+  }
+
+  .nav-toggle::before {
+    content: "☰";
+    font-size: 1.1em;
   }
 
   .nav-panel {
@@ -656,8 +663,16 @@ section {
   background: var(--cis-bg);
 }
 
+/* Mobile overrides for hero alignment */
+@media (max-width: 49.375rem) {
+  .hero--domains .hero__content,
+  .hero--experts .hero__content {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+}
+
 .about-sections {
-  width: min(100% - 3rem, var(--cis-max-width));
   margin-inline: auto;
   display: grid;
   gap: clamp(3rem, 5vw, 4.5rem);
