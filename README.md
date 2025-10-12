@@ -1,2 +1,2 @@
 # cis
-Official Website for the Center for Intelligent Solutions (CIS)
+Official Website for the Centre for Intelligent Solutions (CIS)

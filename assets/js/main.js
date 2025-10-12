@@ -1,13 +1,67 @@
-const navToggle = document.querySelector('[data-nav-toggle]');
-const navLinks = document.querySelector('[data-nav-links]');
+document.addEventListener("DOMContentLoaded", () => {
+  const navToggle = document.querySelector("[data-nav-toggle]");
+  const navLinks = document.querySelector("[data-nav-links]");
+  const navPanel = document.querySelector("[data-nav-panel]");
+  const NAV_ACTIVE_CLASS = "is-open";
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.getAttribute('data-open') === 'true';
-    navLinks.setAttribute('data-open', String(!isOpen));
-    navToggle.setAttribute('aria-expanded', String(!isOpen));
-  });
-}
+  const closeNavPanel = () => {
+    if (!navLinks) return;
+    navLinks.setAttribute("data-open", "false");
+    navToggle?.setAttribute("aria-expanded", "false");
+    navPanel?.classList.remove(NAV_ACTIVE_CLASS);
+    document.body.classList.remove("nav-panel-open");
+  };
+
+  const openNavPanel = () => {
+    if (!navLinks) return;
+    navLinks.setAttribute("data-open", "true");
+    navToggle?.setAttribute("aria-expanded", "true");
+    navPanel?.classList.add(NAV_ACTIVE_CLASS);
+    document.body.classList.add("nav-panel-open");
+  };
+
+  const toggleNavPanel = () => {
+    const isOpen = navLinks?.getAttribute("data-open") === "true";
+    if (isOpen) {
+      closeNavPanel();
+    } else {
+      openNavPanel();
+    }
+  };
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener("click", () => {
+      toggleNavPanel();
+    });
+
+    navPanel?.addEventListener("click", (event) => {
+      if (event.target === navPanel) {
+        closeNavPanel();
+      }
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        closeNavPanel();
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeNavPanel();
+      }
+    });
+
+    const handleBreakpointChange = (event) => {
+      if (!event.matches) {
+        closeNavPanel();
+      }
+    };
+
+    const mobileQuery = window.matchMedia("(max-width: 49.375rem)");
+    mobileQuery.addEventListener("change", handleBreakpointChange);
+  }
+});
 
 const domainsFilterInput = document.querySelector('[data-domains-filter]');
 const domainsCards = document.querySelectorAll('.domains-grid__list .domain-card');
