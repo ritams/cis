@@ -659,7 +659,7 @@ section {
 
 .experts-grid__list {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   padding: clamp(2rem, 3vw, 3rem);
   background: rgba(var(--cis-white-rgb), 0.92);
@@ -694,7 +694,7 @@ section {
 
 .domains-grid__list {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }
 
