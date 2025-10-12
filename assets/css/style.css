@@ -73,7 +73,7 @@ a:focus-visible {
 body.home main {
   display: block;
   flex: 1 0 auto;
-  background: linear-gradient(140deg, rgba(var(--cis-black-rgb), 0.04), rgba(var(--cis-black-rgb), 0.08));
+  background: var(--cis-bg);
 }
 
 main {
@@ -310,6 +310,25 @@ section {
   margin: 0;
 }
 
+.hero__highlight {
+  position: relative;
+  color: rgba(var(--cis-black-rgb), 0.82);
+  font-weight: 600;
+  padding-bottom: 0.05em;
+}
+
+.hero__highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.25em;
+  background: rgba(var(--cis-black-rgb), 0.08);
+  border-radius: 999px;
+  transform: translateY(25%);
+}
+
 .hero--domains {
   position: sticky;
   top: 0;
@@ -378,6 +397,10 @@ section {
   gap: 1.2rem;
   font-size: 0.9rem;
   justify-content: center;
+}
+
+.hero--home-collaborate {
+  background: var(--cis-bg);
 }
 
 .about-sections {
@@ -896,6 +919,134 @@ section {
 
 .about-panel__section--need .about-need__grid p {
   color: rgba(var(--cis-black-rgb), 0.68);
+}
+
+.collaborate-panel .collaborate-modalities {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.collaborate-benefits {
+  margin: clamp(1.4rem, 2vw, 1.8rem) 0 0;
+  padding-left: 1.4rem;
+  color: rgba(var(--cis-black-rgb), 0.64);
+  display: grid;
+  gap: 0.85rem;
+  font-size: 1rem;
+}
+
+.collaborate-contact-grid {
+  display: grid;
+  gap: clamp(1.4rem, 2.6vw, 2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-card {
+  background: rgba(var(--cis-white-rgb), 0.92);
+  border-radius: calc(var(--cis-radius) + 4px);
+  border: 1px solid rgba(var(--cis-black-rgb), 0.1);
+  padding: clamp(1.6rem, 2.6vw, 2rem);
+  display: grid;
+  gap: 0.8rem;
+  align-content: start;
+  transition: transform 200ms var(--cis-transition), box-shadow 200ms var(--cis-transition), border-color 200ms var(--cis-transition);
+}
+
+.contact-card:hover,
+.contact-card:focus-within {
+  transform: translateY(-3px);
+  border-color: var(--cis-tint-strong);
+  box-shadow: 0 24px 46px -38px rgba(var(--cis-black-rgb), 0.28);
+}
+
+.contact-card h3 {
+  margin: 0;
+  font-size: 1.18rem;
+  letter-spacing: 0.04em;
+}
+
+.contact-card__label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  color: rgba(var(--cis-black-rgb), 0.5);
+}
+
+.contact-card__link {
+  color: var(--cis-primary);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.contact-card__details,
+.contact-card__socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+  color: rgba(var(--cis-black-rgb), 0.64);
+  font-size: 0.95rem;
+}
+
+.contact-card__socials a {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-card__socials {
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+  overflow-x: auto;
+}
+
+.contact-card__socials li {
+  white-space: nowrap;
+}
+
+.contact-card__socials a::after {
+  content: "↗";
+  font-size: 0.82em;
+  color: rgba(var(--cis-black-rgb), 0.5);
+  transition: transform 160ms var(--cis-transition), color 160ms var(--cis-transition);
+}
+
+.contact-card__socials a:hover::after,
+.contact-card__socials a:focus-visible::after {
+  transform: translateY(-1px);
+  color: rgba(var(--cis-black-rgb), 0.72);
+}
+
+.contact-card--institute {
+  grid-column: span 2;
+  gap: 1rem;
+}
+
+@media (max-width: 820px) {
+  .collaborate-panel .collaborate-modalities {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .collaborate-contact-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .contact-card__socials {
+    grid-auto-flow: row;
+    gap: 0.55rem;
+  }
+
+  .contact-card--institute {
+    grid-column: auto;
+  }
 }
 
 @media (min-width: 960px) {
