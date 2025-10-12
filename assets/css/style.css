@@ -32,6 +32,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -237,8 +238,23 @@ section {
 .hero__subtitle {
   font-size: clamp(1.25rem, 1.35rem + 0.5vw, 1.6rem);
   color: rgba(var(--cis-black-rgb), 0.6);
-  max-width: 50ch;
   margin: 0 0 1.3rem;
+}
+
+.hero__subtitle--secondary {
+  font-weight: 300;
+  color: rgba(var(--cis-black-rgb), 0.5);
+}
+
+.hero__metric {
+  display: inline-block;
+  padding: 0 0.12rem;
+  margin-inline: 0.1rem;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(var(--cis-black-rgb), 0.68);
+  border-bottom: 1px solid rgba(var(--cis-black-rgb), 0.18);
 }
 
 .hero__stats {
