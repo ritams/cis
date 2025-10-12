@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body class="domains">
   <header class="site-header">
     <div class="navbar">
       <div class="brand-group">
@@ -35,51 +35,161 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main class="domains-main">
+    <section class="hero hero--domains">
       <div class="hero__inner">
         <div class="hero__content">
-          <h1>Capabilities tailored to your domain.</h1>
-          <p class="hero__subtitle">Each stream pairs core science with deployable engineering so that pilots move quickly from proof to production.</p>
+          <div class="experts-hero-title">
+            <h1>DOMAINS COLLECTIVE</h1>
+            <ul class="hero__stats">
+              <li>11 domain tracks</li>
+              <li>19 associated researchers</li>
+            </ul>
+          </div>
+          <form class="experts-filter" role="search">
+            <label class="visually-hidden" for="domains-search">Search domain expertise</label>
+            <input id="domains-search" type="search" placeholder="Search domains, keywords, or outcomes" autocomplete="off" data-domains-filter />
+          </form>
+          <p class="hero__blurb">Capabilities tailored to your domain. Each stream pairs core science with deployable engineering so that pilots move quickly from proof to production.</p>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="wrapper surface">
-        <div class="columns columns--two expertise-columns">
-          <div>
-            <h2>Molecules &amp; materials</h2>
-            <ul class="simple-list">
-              <li>Molecular dynamics and free-energy modelling for biopharma and energy partners.</li>
-              <li>Computational material design spanning DFT, QM/MM, and kinetic simulations.</li>
-              <li>Quantum materials, spintronics, and device-grade property prediction.</li>
-            </ul>
-          </div>
-          <div>
-            <h2>AI &amp; algorithms</h2>
-            <ul class="simple-list">
-              <li>Bespoke machine learning, graph, and reinforcement models for scientific data.</li>
-              <li>Neuro-inspired algorithms that turn biological insights into sensing systems.</li>
-              <li>Parallel HPC pipelines that translate massive datasets into real-time insight.</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Quantum &amp; computation</h2>
-            <ul class="simple-list">
-              <li>Algorithm design for optimisation, cryptography, and secure communication.</li>
-              <li>Quantum-ready simulations to benchmark hardware and inform architecture choices.</li>
-              <li>Applied mathematics toolkits that de-risk complex decision models.</li>
-            </ul>
-          </div>
-          <div>
-            <h2>Climate &amp; urban systems</h2>
-            <ul class="simple-list">
-              <li>Weather and climate analytics for risk, agriculture, and infrastructure planning.</li>
-              <li>Urban data, routing, and mobility intelligence for logistics and civic partners.</li>
-              <li>Financial modelling that links climate exposure with capital allocation.</li>
-            </ul>
-          </div>
+    <section class="experts-grid domains-grid">
+      <div class="experts-grid__inner domains-grid__inner">
+        <div class="experts-grid__list domains-grid__list">
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--molecular-dynamics" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Molecular dynamics</h3>
+              <ul class="domain-card__tags">
+                <li>Proteins</li>
+                <li>Metadynamics</li>
+                <li>Free energy</li>
+              </ul>
+              <p>For any industry application, simulations of complex processes are the first steps in any feasibility investigation before more expensive wet lab experiments are performed. Centre has extensive experience and expertise for carrying out large-scale molecular dynamics simulations of a variety of systems ranging from several classes of materials to biological systems. This includes simulations of proteins, DNA, protein-DNA interactions, electrolytes, polymers, etc. Even more sophisticated techniques, such as umbrella sampling, different versions of metadynamics, thermodynamic integration, etc. are carried out to obtain free energetic estimates of a process that is more accurate and match closely to experimental realisations.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--drug-design" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Drug design</h3>
+              <ul class="domain-card__tags">
+                <li>Docking</li>
+                <li>De novo</li>
+                <li>Free energy</li>
+              </ul>
+              <p>Computer-aided drug design is an integral part in the current approaches to drug design. The centre has expertise to carry out various docking studies, de novo design of drug molecules, and test them computationally using MD simulations and free energy calculations. Our groups are adept at using AI-driven tools (such as RFdiffusion, AlphaFlow, etc.) that aid in the discovery of new drugs for a particular target.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--machine-learning" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Machine learning</h3>
+              <ul class="domain-card__tags">
+                <li>Deep learning</li>
+                <li>Graph models</li>
+                <li>HPC</li>
+              </ul>
+              <p>IISER Pune has expertise in various Machine Learning techniques. In our work, we employ deep learning, graph convolutional neural networks, LSTM, reinforcement learning, etc. We routinely develop new specialised parallel algorithms targeted towards a wide range of domains in the basic sciences as well as in applied fields. A dedicated high performance computing facility at IISER Pune caters to our infrastructural requirements.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--quantum-computing" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Quantum computing</h3>
+              <ul class="domain-card__tags">
+                <li>Optimisation</li>
+                <li>Cryptography</li>
+                <li>Sensing</li>
+              </ul>
+              <p>This is one of the emerging areas that promises faster and efficient solutions for certain classes of problems in a wide range of industrial settings. This could include, but not limited to, supply-chain optimisation (and also most types of optimisation) problems, privacy protection, cryptography, high-precision sensing, and communications. IISER Pune leads India's efforts in this area and has a strong faculty strength and infrastructure in nearly all these areas.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--urban-analytics" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Urban data analytics</h3>
+              <ul class="domain-card__tags">
+                <li>Mobility</li>
+                <li>Simulation</li>
+                <li>Routing</li>
+              </ul>
+              <p>In the last one decade, many new tools and data sources such as OpenStreetMap have emerged that are of immense benefit in route planning and optimization, for mobile applications that require location-aware services (e.g., cab aggregators), and as a simulation tool to predict traffic and other tools of relevance in urban landscape.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--quantitative-finance" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Quantitative finance</h3>
+              <ul class="domain-card__tags">
+                <li>Risk</li>
+                <li>Pricing</li>
+                <li>Fintech</li>
+              </ul>
+              <p>Decisions related to financial transactions taken by either commoners, market participants or regulators often depend on solutions to complex mathematical and statistical problems. Those include but are not limited to fintech applications, option pricing, financial portfolio optimization, credit risk evaluation, and many others. IISER Pune has mathematical and simulation expertise and industry experience in these areas.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--climate-analytics" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Weather and climate data analytics</h3>
+              <ul class="domain-card__tags">
+                <li>Forecasting</li>
+                <li>Extreme events</li>
+                <li>Risk</li>
+              </ul>
+              <p>Data analytics is an integral part of weather and climate studies. Mathematical and statistical models and machine learning approaches are used to work on problems ranging from cloud organisation, extreme heat and precipitation events and forecasting monsoon variability. Expertise in these areas will facilitate industry academia collaborations in areas such as weather forecasting, disaster risk assessment, urban heat island effects, agricultural advisory and environmental consultancy. Some of these products are useful for industries ranging from insurance to transportation.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--computational-materials" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Computational material science</h3>
+              <ul class="domain-card__tags">
+                <li>DFT</li>
+                <li>Kinetic Monte Carlo</li>
+                <li>Multiscale</li>
+              </ul>
+              <p>Microscopic understanding of material properties is imperative for in silico designing of novel materials. At IISER Pune there are expertise available to carry out large-scale density functional theory (both time-dependent and time-independent) based calculations, coupled with molecular dynamics simulations of different flavours, for eg. ab initio, classical and quantum mechanics molecular mechanics, path integral, etc. Additionally, we have expertise in performing nudged elastic band calculations and kinetic Monte Carlo simulations. Using these tools material properties across large length scales and long time scales can be extracted for practical applications.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--data-to-information" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>From data to information</h3>
+              <ul class="domain-card__tags">
+                <li>Cosmology</li>
+                <li>Statistical tools</li>
+                <li>Pattern extraction</li>
+              </ul>
+              <p>In the current era of precision cosmology, international experiments are providing high quality and large volumes of data. The analysis and physical modelling of this data requires the development of computational and statistical tools at a scale that is unprecedented in order to answer fundamental questions. At IISER, we have expertise in multiple branches of this effort that can be leveraged for industry requirements: simulation techniques that employ high-performance computing through parallelisation over thousands of cores, developing novel statistical tools to extract specific patterns within the data, and applying cutting-edge machine learning techniques to optimise the extraction of useful information from the vast amounts of raw data.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--wetware" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Algorithms from wetware</h3>
+              <ul class="domain-card__tags">
+                <li>Neuroscience</li>
+                <li>Pattern recognition</li>
+                <li>Bio-inspired</li>
+              </ul>
+              <p>Living systems may appear to be a soup of chemicals that interact in complex and unpredictable ways towards solving problems an animal encounters in its environment. Sub-cellular and intercellular interaction networks are wired in ways that solve many of these problems. Since these networks have evolved over billions of years, understanding how biological systems solve problems related to pattern recognition, pattern classification, navigation, memory storage and retrieval will provide insights into successful, perhaps optimal, biological algorithms to exploit complex information. We develop detailed and idealised models of neurobiological interaction networks at several scales that reveal how animals sense odours, navigate, remember, and recollect. Efforts are on to develop an electronic nose based on insect olfactory systems to detect a cocktail of volatile components in a person's breath that can be used to identify pathological states.</p>
+            </div>
+          </article>
+          <article class="person-card domain-card">
+            <div class="domain-card__media domain-card__media--quantum-materials" aria-hidden="true"></div>
+            <div class="domain-card__body">
+              <h3>Quantum materials and emergent phenomena</h3>
+              <ul class="domain-card__tags">
+                <li>Spintronics</li>
+                <li>Topology</li>
+                <li>Device design</li>
+              </ul>
+              <p>Computational research is crucial for understanding the fundamental physics of quantum materials and designing them for applications in quantum computing, spintronics, and other advanced technologies. The IISER team specialises in advanced theoretical models and numerical simulations to obtain information about the electronic, magnetic, and topological properties of these materials. By manipulating parameters such as strain, doping, and external fields, researchers can predict material responses, guiding experimental efforts and the development of novel devices.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>

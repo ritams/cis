@@ -9,6 +9,45 @@ if (navToggle && navLinks) {
   });
 }
 
+const domainsFilterInput = document.querySelector('[data-domains-filter]');
+const domainsCards = document.querySelectorAll('.domains-grid__list .domain-card');
+const domainsGrid = document.querySelector('.domains-grid__list');
+
+if (domainsFilterInput && domainsCards.length) {
+  const emptyState = document.createElement('p');
+  emptyState.className = 'domains-grid__empty';
+  emptyState.textContent = 'No domains match the current query. Try different keywords.';
+
+  const normalize = (value) => value.toLowerCase().replace(/\s+/g, ' ').trim();
+
+  const cardTexts = new Map();
+  domainsCards.forEach((card) => {
+    const text = normalize(card.textContent || '');
+    cardTexts.set(card, text);
+  });
+
+  const filterCards = (query) => {
+    const normalizedQuery = normalize(query);
+    let visibleCount = 0;
+
+    domainsCards.forEach((card) => {
+      const matches = !normalizedQuery || cardTexts.get(card).includes(normalizedQuery);
+      card.style.display = matches ? '' : 'none';
+      if (matches) visibleCount += 1;
+    });
+
+    if (visibleCount === 0) {
+      domainsGrid?.appendChild(emptyState);
+    } else {
+      emptyState.remove();
+    }
+  };
+
+  domainsFilterInput.addEventListener('input', (event) => {
+    filterCards(event.target.value);
+  });
+}
+
 const yearEl = document.querySelector('[data-current-year]');
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
