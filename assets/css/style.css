@@ -13,14 +13,14 @@
   --cis-surface: var(--cis-white);
   --cis-text: var(--cis-gray-820);
   --cis-muted: var(--cis-gray-420);
-  --cis-primary: var(--cis-gray-820);
-  --cis-primary-hover: var(--cis-gray-640);
-  --cis-accent: var(--cis-gray-240);
-  --cis-border: rgba(var(--cis-black-rgb), 0.14);
-  --cis-tint-light: rgba(var(--cis-black-rgb), 0.06);
-  --cis-tint-medium: rgba(var(--cis-black-rgb), 0.1);
-  --cis-tint-strong: rgba(var(--cis-black-rgb), 0.18);
-  --cis-shadow-soft: 0 1.125rem 2.625rem -1.875rem rgba(var(--cis-black-rgb), 0.38);
+  --cis-primary: #0051b5ff;
+  --cis-primary-hover: #003980ff;
+  --cis-accent: #1a81ffff;
+  --cis-border: rgba(0, 81, 181, 0.14);
+  --cis-tint-light: rgba(0, 81, 181, 0.06);
+  --cis-tint-medium: rgba(0, 81, 181, 0.1);
+  --cis-tint-strong: rgba(0, 81, 181, 0.18);
+  --cis-shadow-soft: 0 1.125rem 2.625rem -1.875rem rgba(0, 81, 181, 0.38);
   --cis-radius: 0.875rem;
   --cis-radius-pill: 999rem;
   --cis-border-width: 0.0625rem;
@@ -577,7 +577,7 @@ section {
   bottom: 0;
   width: 100%;
   height: 0.25em;
-  background: rgba(var(--cis-black-rgb), 0.08);
+  background: rgba(26, 129, 255, 0.08);
   border-radius: var(--cis-radius-pill);
   transform: translateY(25%);
 }
