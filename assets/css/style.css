@@ -1608,7 +1608,7 @@ section {
   display: inline-flex;
   align-items: center;
   padding: 0.55rem 1.4rem;
-  border: var(--cis-border-width) solid rgba(var(--cis-black-rgb), 0.2);
+  border: var(--cis-border-width) solid rgba(26, 129, 255, 0.25);
   border-radius: var(--cis-radius-pill);
   font-weight: 600;
   text-transform: uppercase;
@@ -1616,10 +1616,11 @@ section {
   transition: background-color 160ms var(--cis-transition), color 160ms var(--cis-transition), border-color 160ms var(--cis-transition);
 }
 
+/* todo remove magic numbers */
 .nav-cta:hover,
 .nav-cta:focus-visible {
-  background: rgba(var(--cis-black-rgb), 0.08);
-  border-color: rgba(var(--cis-black-rgb), 0.32);
+  background: rgba(26, 129, 255, 0.25);
+  border-color: rgba(26, 129, 255, 0.25);
 }
 
 .columns {
