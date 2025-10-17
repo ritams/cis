@@ -744,18 +744,26 @@ section {
 .about-pillars__grid {
   display: grid;
   gap: 1.8rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .pillar-card {
   padding: clamp(1.8rem, 2.4vw, 2.4rem);
   border-radius: var(--cis-radius);
   border: var(--cis-border-width) solid rgba(var(--cis-black-rgb), 0.12);
-  background: rgba(var(--cis-white-rgb), 0.88);
+  background: linear-gradient(135deg, rgba(var(--cis-white-rgb), 0.9), rgba(var(--cis-accent), 0.03));
   display: grid;
   gap: 1rem;
   align-content: start;
   box-shadow: 0 1.375rem 3rem -2.5rem rgba(var(--cis-black-rgb), 0.28);
+  transition: transform 200ms var(--cis-transition), box-shadow 200ms var(--cis-transition), border-color 200ms var(--cis-transition);
+}
+
+.pillar-card:hover,
+.pillar-card:focus-within {
+  transform: translateY(-0.25rem);
+  border-color: rgba(var(--cis-black-rgb), 0.22);
+  box-shadow: 0 2.375rem 4rem -2.75rem rgba(var(--cis-black-rgb), 0.36);
 }
 
 .pillar-card h3 {
@@ -1218,6 +1226,8 @@ section {
   margin: 0;
   color: rgba(var(--cis-black-rgb), 0.62);
   font-size: 1.02rem;
+  border-left: var(--cis-border-strong-width) solid rgba(var(--cis-black-rgb), 0.2);
+  padding-left: 0.9rem;
 }
 
 .about-panel__section--pillars .about-pillars__grid,
@@ -1406,18 +1416,12 @@ section {
 }
 
 .simple-list li {
-  position: relative;
-  padding-left: 1.4rem;
-}
-
-.simple-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.65rem;
-  width: 0.5rem;
-  height: 0.0625rem;
-  background: rgba(var(--cis-black-rgb), 0.5);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  border-left: var(--cis-border-strong-width) solid var(--cis-border);
+  padding-left: 0.5rem;
+  border-radius: 0.5rem
 }
 
 .hero__clusters {
