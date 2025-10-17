@@ -1463,7 +1463,7 @@ section {
   margin-bottom: 0.5rem;
   border-left: var(--cis-border-strong-width) solid var(--cis-border);
   padding-left: 0.5rem;
-  border-radius: 0.5rem
+  border-radius: 0.3rem
 }
 
 .hero__clusters {
