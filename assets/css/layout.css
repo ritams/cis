@@ -36,8 +36,7 @@
 
 .brand img {
   display: block;
-  height: 1.65rem;
-  width: 3.5rem;
+  height: 3rem;
   object-fit: cover;
   padding-right: 0.5rem;
 }
@@ -191,11 +190,11 @@
   }
 
   .brand-name {
-    font-size: 0.5rem;
+    font-size: 0.60rem;
   }
 
   .brand-tagline {
-    font-size: 0.5rem;
+    font-size: 0.60rem;
   }
 
   .nav-toggle {
@@ -253,8 +252,7 @@
     top: 1rem;
     left: 1rem;
     font-size: 2rem;
-    color: var(--cis-text);
-    background: none;
+    color: var(--cis-text);    background: none;
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -326,7 +324,7 @@
   .about-panel__inner,
   .experts-grid__list,
   .collaborate-panel .about-panel__inner {
-    background: transparent;
+    background: var(--cis-bg);
     border: 0;
     box-shadow: none;
     padding: 0;
