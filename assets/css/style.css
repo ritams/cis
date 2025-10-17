@@ -1372,6 +1372,33 @@ section {
   color: var(--cis-primary-hover);
 }
 
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cis-primary);
+  text-decoration: none;
+  transition: color 200ms var(--cis-transition);
+}
+
+.download-link:hover {
+  color: var(--cis-primary-hover);
+}
+
+.download-link::after {
+  content: "➝";
+  font-size: 0.9em;
+  transition: transform 160ms var(--cis-transition);
+}
+
+.download-link:hover::after {
+  transform: translateX(0.1875rem);
+}
+
 .contact-card__socials a {
   color: inherit;
   display: inline-flex;
