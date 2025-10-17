@@ -517,7 +517,7 @@ section {
   font-weight: 500;
   letter-spacing: 0.04em;
   color: rgba(var(--cis-black-rgb), 0.68);
-  border-bottom: var(--cis-border-width) solid rgba(var(--cis-black-rgb), 0.18);
+  border-bottom: var(--cis-border-width) solid rgba(26, 129, 255, 0.25);
 }
 
 .hero__stats {
