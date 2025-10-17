@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navToggle = document.querySelector("[data-nav-toggle]");
   const navLinks = document.querySelector("[data-nav-links]");
   const navPanel = document.querySelector("[data-nav-panel]");
+  const navClose = document.querySelector('.nav-close');
   const NAV_ACTIVE_CLASS = "is-open";
 
   const closeNavPanel = () => {
@@ -32,6 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navToggle && navLinks) {
     navToggle.addEventListener("click", () => {
       toggleNavPanel();
+    });
+
+    navClose?.addEventListener("click", () => {
+      closeNavPanel();
     });
 
     navPanel?.addEventListener("click", (event) => {

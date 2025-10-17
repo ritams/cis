@@ -8,7 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/cards.css" />
+  <link rel="stylesheet" href="assets/css/buttons.css" />
+  <link rel="stylesheet" href="assets/css/forms.css" />
+  <link rel="stylesheet" href="assets/css/misc.css" />
 </head>
 <body class="home">
   <header class="site-header">
@@ -25,12 +31,13 @@
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav"></button>
       <div class="nav-panel" data-nav-panel>
         <nav id="primary-nav" aria-label="Primary">
+          <button class="nav-close" aria-label="Close menu">×</button>
           <ul class="nav-links" data-nav-links data-open="false">
           <li><a class="is-active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="domain-expertise.html">Domain Expertise</a></li>
-          <li><a href="people.html">Experts</a></li>
-          <li><a class="nav-cta" href="engage.html">Collaborate with us</a></li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a class="nav-cta" href="collaborate.html">Collaborate with us</a></li>
           </ul>
         </nav>
       </div>
@@ -45,13 +52,13 @@
             <h1>CENTRE FOR INTELLIGENT SOLUTIONS</h1>
           </div>
           <p class="hero__subtitle hero__subtitle--secondary">Applied intelligence for your toughest decisions.</p>
-          <p class="hero__blurb">Partner with <span class="hero__highlight">IISER Pune</span>&rsquo;s interdisciplinary experts to translate research breakthroughs into <span class="hero__highlight">deployable industry solutions</span>. We move quickly from scoping to pilots, assemble bespoke teams across 10+ domains, and stay engaged through implementation<br>for <span class="hero__highlight">measurable impact</span>.</p>
+          <p class="hero__blurb">Partner with <span class="hero__highlight">IISER Pune</span>&rsquo;s interdisciplinary experts to translate research breakthroughs into <span class="hero__highlight">deployable industry solutions</span>. We move quickly from scoping to pilots, assemble bespoke teams across 10+ domains, and stay engaged through implementation for <span class="hero__highlight">measurable impact</span>.</p>
           <ul class="hero__stats">
             <li><span class="hero__metric">10+ focus domains</span></li>
             <li><span class="hero__metric">19 researchers</span></li>
           </ul>
           <div class="cta-group">
-            <a class="cta-button" href="engage.html">Collaborate with us</a>
+            <a class="cta-button" href="collaborate.html">Collaborate with us</a>
             <a class="cta-button cta-button--muted" href="domain-expertise.html">Explore expertise</a>
           </div>
         </div>

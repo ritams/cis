@@ -1,0 +1,24 @@
+.experts-filter {
+  width: min(100%, 26.25rem);
+  margin-inline: auto;
+}
+
+.experts-filter input {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--cis-radius-pill);
+  border: var(--cis-border-width) solid rgba(var(--cis-black-rgb), 0.18);
+  background: rgba(var(--cis-white-rgb), 0.92);
+  font-size: 1rem;
+  transition: border-color 150ms var(--cis-transition), box-shadow 150ms var(--cis-transition);
+}
+
+.experts-filter input::placeholder {
+  color: rgba(var(--cis-black-rgb), 0.45);
+}
+
+.experts-filter input:focus-visible {
+  outline: none;
+  border-color: rgba(var(--cis-black-rgb), 0.3);
+  box-shadow: 0 0 0 0.1875rem rgba(var(--cis-black-rgb), 0.08);
+}

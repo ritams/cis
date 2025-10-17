@@ -8,7 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/cards.css" />
+  <link rel="stylesheet" href="assets/css/buttons.css" />
+  <link rel="stylesheet" href="assets/css/forms.css" />
+  <link rel="stylesheet" href="assets/css/misc.css" />
 </head>
 <body>
   <header class="site-header">
@@ -23,14 +29,14 @@
         </a>
       </div>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav"></button>
-      <nav id="primary-nav">
+      <nav id="primary-nav" aria-label="Primary">
+        <button class="nav-close" aria-label="Close menu">×</button>
         <ul class="nav-links" data-nav-links data-open="false">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="domain-expertise.html">Domain Expertise</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="engage.html">Engage</a></li>
-          <li><a class="is-active" href="contact.html">Contact</a></li>
+          <li><a href="experts.html">Experts</a></li>
+          <li><a href="collaborate.html">Collaborate with us</a></li>
         </ul>
       </nav>
     </div>
