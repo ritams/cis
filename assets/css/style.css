@@ -145,6 +145,7 @@ section {
 .brand {
   display: inline-flex;
   align-items: center;
+  transition: transform 200ms var(--cis-transition);
 }
 
 .brand img {
@@ -170,6 +171,21 @@ section {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(var(--cis-black-rgb), 0.44);
+}
+
+.brand:hover .brand-name,
+.brand:focus-visible .brand-name {
+  color: rgba(var(--cis-black-rgb), 0.82);
+}
+
+.brand:hover .brand-tagline,
+.brand:focus-visible .brand-tagline {
+  color: rgba(var(--cis-black-rgb), 0.48);
+}
+
+.brand:hover,
+.brand:focus-visible {
+  transform: translateY(-0.0625rem);
 }
 
 .nav-toggle {
