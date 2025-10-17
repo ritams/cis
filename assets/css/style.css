@@ -1359,6 +1359,19 @@ section {
   font-size: 0.95rem;
 }
 
+.contact-card__details a {
+  color: inherit;
+}
+
+.contact-email {
+  font-weight: 600;
+  transition: color 200ms var(--cis-transition);
+}
+
+.contact-email:hover {
+  color: var(--cis-primary-hover);
+}
+
 .contact-card__socials a {
   color: inherit;
   display: inline-flex;
